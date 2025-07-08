@@ -1,48 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-B">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bem-vindo ao Meu Canal!</title>
+    
+    <!-- TÍTULO DO SEU SITE -->
+    <title>Canal [Nome do Canal] - Site Oficial</title>
+    
+    <!-- Carregando o Tailwind CSS para um design moderno e responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Carregando a fonte 'Inter' do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
     <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            background-color: #f4f4f4; 
-            color: #333; 
-            text-align: center; 
-            padding: 50px; 
-        }
-        .container { 
-            max-width: 800px; 
-            margin: auto; 
-            background: white; 
-            padding: 20px; 
-            border-radius: 8px; 
-            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
-        }
-        h1 { 
-            color: #c00; 
-        }
-        a { 
-            display: inline-block; 
-            margin-top: 20px; 
-            padding: 10px 20px; 
-            background-color: #ff0000; 
-            color: white; 
-            text-decoration: none; 
-            border-radius: 5px; 
+        /* Aplicando a fonte Inter a todo o corpo do site */
+        body {
+            font-family: 'Inter', sans-serif;
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <img src="URL_DA_LOGO_DO_SEU_CANAL" alt="Logo do Canal" width="150">
-        
-        <h1>Canal do [Seu Nome]</h1>
-        
-        <p>Olá! Bem-vindo ao site oficial do meu canal no YouTube. Aqui você encontrará os vídeos mais recentes, playlists e muito mais.</p>
-        
-        <a href="https://www.youtube.com/c/SEUCANAL" target="_blank">Visite meu Canal no YouTube</a>
-    </div>
+<body class="bg-gray-900 text-white">
+
+    <!-- CABEÇALHO -->
+    <header class="bg-gray-800 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- COLOQUE O NOME DO SEU CANAL AQUI -->
+            <h1 class="text-2xl font-bold text-red-500">NOME DO CANAL</h1>
+            <!-- LINK PARA SE INSCREVER -->
+            <a href="https://www.youtube.com/c/SEUCANAL?sub_confirmation=1" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                Inscreva-se
+            </a>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- SEÇÃO DE DESTAQUE -->
+        <section class="text-center">
+            <h2 class="text-4xl font-extrabold mb-4">Bem-vindo ao meu universo!</h2>
+            <p class="text-lg text-gray-400 max-w-3xl mx-auto">
+                <!-- Mude esta descrição para falar sobre o seu canal -->
+                Este é o espaço oficial do meu canal! Aqui você encontra os vídeos mais recentes, informações exclusivas e todas as minhas redes sociais.
+            </p>
+        </section>
+
+        <!-- SEÇÃO DO VÍDEO EM DESTAQUE -->
+        <section class="mt-16">
+            <h3 class="text-3xl font-bold text-center mb-8">Último Vídeo</h3>
+            
+            <!-- 
+              COMO PEGAR O CÓDIGO DO VÍDEO:
+              1. Vá para o seu vídeo no YouTube.
+              2. Clique em "Compartilhar" (Share).
+              3. Clique em "Incorporar" (Embed).
+              4. Copie o código que começa com "<iframe..." e cole ele abaixo, substituindo o que já está aqui.
+            -->
+            <div class="aspect-w-16 aspect-h-9 max-w-4xl mx-auto">
+                 <iframe 
+                    class="w-full h-full rounded-xl shadow-2xl"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SOBRE MIM -->
+        <section class="mt-16 bg-gray-800 p-8 rounded-xl max-w-4xl mx-auto">
+             <h3 class="text-3xl font-bold text-center mb-6">Sobre o Canal</h3>
+             <p class="text-gray-300 text-center">
+                <!-- Escreva um pouco sobre você e o tipo de conteúdo que você cria. -->
+                Aqui eu falo sobre [TEMA 1], [TEMA 2] e [TEMA 3]. Minha paixão é criar conteúdo divertido e informativo para a comunidade. Faço vídeos novos toda semana! Fique à vontade para explorar e maratonar as playlists.
+             </p>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ E REDES SOCIAIS -->
+    <footer class="bg-gray-800 mt-16 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-xl font-bold mb-4">Siga-me nas redes!</p>
+            <div class="flex justify-center space-x-6">
+                <!-- TROQUE O '#' PELOS LINKS DAS SUAS REDES SOCIAIS -->
+                <a href="#" target="_blank" class="text-gray-400 hover:text-red-500 transition duration-300">Instagram</a>
+                <a href="#" target="_blank" class="text-gray-400 hover:text-red-500 transition duration-300">Twitter / X</a>
+                <a href="#" target="_blank" class="text-gray-400 hover:text-red-500 transition duration-300">TikTok</a>
+                <a href="#" target="_blank" class="text-gray-400 hover:text-red-500 transition duration-300">Twitch</a>
+            </div>
+            <p class="text-gray-500 text-sm mt-8">© 2024 - [Nome do Canal]. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
