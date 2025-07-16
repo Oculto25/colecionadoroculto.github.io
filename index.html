@@ -1,95 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- TÍTULO DO SEU SITE -->
-    <title>Canal [O Colecionador Oculto] - Site Oficial</title>
-    
-    <!-- Carregando o Tailwind CSS para um design moderno e responsivo -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Carregando a fonte 'Inter' do Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
-    
-    <style>
-        /* Aplicando a fonte Inter a todo o corpo do site */
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Colecionador Oculto - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-black-900 text-white">
+<body>
+  <!-- Cabeçalho com menu de navegação -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="videos.html">Vídeos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="livros.html">Livros</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- CABEÇALHO -->
-    <header class="bg-black-800 shadow-lg">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <!-- O Colecionador Oculto -->
-            <h1 class="text-2xl font-bold text-red-500">O Colecionador Oculto</h1>
-            <!-- https://youtube.com/@ocolecionadoroculto?sub_confirmation=1 -->
-            <a href="https://youtube.com/@ocolecionadoroculto?sub_confirmation=1" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
-                Inscreva-se
-            </a>
-        </div>
-    </header>
+  <!-- Seção principal - Página Inicial -->
+  <main>
+    <!-- Banner com imagem de fundo -->
+    <section id="banner">
+      <!-- Preencha com a imagem de fundo desejada ou altere via CSS -->
+      <div class="overlay">
+        <h1>A arte como último refúgio do espírito</h1>
+      </div>
+    </section>
 
-    <!-- CONTEÚDO PRINCIPAL -->
-    <main class="container mx-auto px-6 py-12">
+    <!-- Breve descrição do canal -->
+    <section id="intro">
+      <p>Um espaço para quem coleciona palavras, pensamentos e silêncios. Falamos de livros, arte, história e do que não cabe em palavras.</p>
+      <!-- Botões de acesso rápido -->
+      <div class="btn-container">
+        <a class="btn" href="videos.html">Último vídeo</a>
+        <a class="btn" href="sobre.html">Sobre Mim</a>
+        <a class="btn" href="blog.html">Blog</a>
+        <a class="btn" href="contato.html">Contato/Newsletter</a>
+      </div>
+    </section>
+  </main>
 
-        <!-- SEÇÃO DE DESTAQUE -->
-        <section class="text-center">
-            <h2 class="text-4xl font-extrabold mb-4">Bem-vindo ao meu universo!</h2>
-            <p class="text-lg text-gray-400 max-w-3xl mx-auto">
-                <!-- Mude esta descrição para falar sobre o seu canal -->
-                Este é o espaço oficial do meu canal! Aqui você encontra os vídeos mais recentes, informações exclusivas e todas as minhas redes sociais.
-            </p>
-        </section>
-
-        <!-- SEÇÃO DO VÍDEO EM DESTAQUE -->
-        <section class="mt-16">
-            <h3 class="text-3xl font-bold text-center mb-8">Último Vídeo</h3>
-            
-            <!-- 
-              COMO PEGAR O CÓDIGO DO VÍDEO:
-              1. Vá para o seu vídeo no YouTube.
-              2. Clique em "Compartilhar" (Share).
-              3. Clique em "Incorporar" (Embed).
-              4. Copie o código que começa com "<iframe..." e cole ele abaixo, substituindo o que já está aqui.
-            -->
-            <div class="aspect-w-16 aspect-h-9 max-w-4xl mx-auto">
-                 <iframe 
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dAZE1cbJw3A?si=yaCmqOpXWpp6lRys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </iframe>
-            </div>
-        </section>
-
-        <!-- SEÇÃO SOBRE MIM -->
-        <section class="mt-16 bg-gray-800 p-8 rounded-xl max-w-4xl mx-auto">
-             <h3 class="text-3xl font-bold text-center mb-6">Sobre o Canal</h3>
-             <p class="text-black-300 text-center">
-                <!-- Escreva um pouco sobre você e o tipo de conteúdo que você cria. -->
-                Aqui eu falo sobre Filosofia, psicologia, arte e ciência. Minha paixão é aprender e compartilhar esse aprendizado. Faço vídeos novos toda semana! Fique à vontade para explorar e maratonar as playlists.
-             </p>
-        </section>
-
-    </main>
-
-    <!-- RODAPÉ E REDES SOCIAIS -->
-    <footer class="bg-gray-800 mt-16 py-8">
-        <div class="container mx-auto px-6 text-center">
-            <p class="text-xl font-bold mb-4">Siga-me nas redes!</p>
-            <div class="flex justify-center space-x-6">
-                <!-- TROQUE O '#' PELOS LINKS DAS SUAS REDES SOCIAIS -->
-                <a href="https://www.instagram.com/colecionador_oculto/" target="_blank" class="text-gray-400 hover:text-red-500 transition duration-300">Instagram</a>
-                <a href="#" target="_blank" class="text-gray-400 hover:text-red-500 transition duration-300">Twitter / X</a>
-                <a href="#" target="_blank" class="text-gray-400 hover:text-red-500 transition duration-300">TikTok</a>
-            </div>
-            <p class="text-black-500 text-sm mt-8">© 2024 -O Colecionador Oculto. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Colecionador Oculto - Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
