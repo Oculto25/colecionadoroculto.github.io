@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato - Colecionador Oculto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="videos.html">Vídeos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="livros.html">Livros</a></li>
+        <li><a href="contato.html" class="active">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contato">
+      <h2>Contato e Newsletter</h2>
+      <!-- Formulário de contato (uso simples do HTML; ideal complementar com um serviço backend ou integração com formulários online) -->
+      <form action="mailto:seu-email@exemplo.com" method="post" enctype="text/plain">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <!-- Integração com newsletter (pode ser via Mailchimp, etc.) -->
+      <div class="newsletter">
+        <p>Assine nossa newsletter para receber reflexões mensais e trechos inéditos:</p>
+        <!-- Exemplo de formulário de inscrição (personalize conforme sua ferramenta) -->
+        <form action="https://seuserviconewsletter.com/inscricao" method="post">
+          <input type="email" placeholder="Seu e-mail" required>
+          <button type="submit">Inscrever-se</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Colecionador Oculto - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
